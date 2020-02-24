@@ -9,17 +9,7 @@ import TopHeadlines from './news/TopHeadlines.js';
 
 import './App.css';
 
-
 class App extends Component {
-  /*
-  constructor(props) {
-    super(props);
-    this.state = {
-
-    }
-  }
-  */
-
   render() {
     return (
       <Router>
