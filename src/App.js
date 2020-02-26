@@ -3,7 +3,6 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
 import Footer from './elements/Footer.js';
 import Header from './elements/Header.js';
-import About from './elements/About.js';
 import AllNews from './news/AllNews.js';
 import TopHeadlines from './news/TopHeadlines.js';
 
@@ -25,8 +24,6 @@ class App extends Component {
                 </Switch>
               </div>
             </div>
-
-            <About />  
           </div>
 
           <Footer />

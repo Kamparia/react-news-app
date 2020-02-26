@@ -3,13 +3,16 @@ import React from 'react';
 const SingleNewsItem = ({item}) => {
   return (
     <div className="item web col-sm-6 col-md-4 col-lg-4 mb-4">
-      <a href={item.url} className="item-wrap fancybox" target="_blank" rel="noopener noreferrer">
-        <div className="work-info">
-          <h3>{item.title}</h3>
-          <span>{item.source.name}</span>
+      <div className="card">
+        <div className="card-img-box">
+          <img className="card-img-top" src={item.urlToImage} alt={item.title} />
         </div>
-        <img className="img-fluid" alt={item.title} src={item.urlToImage} />
-      </a>
+        <div className="card-body">
+          <h6 className="card-title">{item.title}</h6>
+          <p className="card-text">{item.source.name}</p>
+          <a href={item.url} className="btn btn-primary" title={item.title} target="_blank" rel="noopener noreferrer">Full Article</a>
+        </div>
+      </div>
     </div>
   )
 }
