@@ -19,7 +19,6 @@ class TopHeadlines extends Component {
     await axios.get(api_endpoint).then(function (response){
       const data = response.data;
       const news = data.articles.slice(0, 30);
-      //console.log(news);
 
       self.setState({
         news: news
