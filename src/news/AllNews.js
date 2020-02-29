@@ -11,17 +11,16 @@ class AllNews extends Component {
     }
   }
 
-  componentDidMount = async () => {
+  componentWillReceiveProps = async () => {
     const self = this;
     const api_key = "8e9f1bf2b8c841278301c14cf986965e";
     const { handle } = self.props.match.params;
-
     const api_endpoint = `http://newsapi.org/v2/everything?q=${handle}&sortBy=publishedAt&language=en&apiKey=${api_key}`;
 
     await axios.get(api_endpoint).then(function (response){
       const data = response.data;
       const news = data.articles.slice(0, 30);
-      //console.log(news);
+      //console.log(handle);
 
       self.setState({
         news: news
