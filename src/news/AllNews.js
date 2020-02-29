@@ -11,9 +11,9 @@ class AllNews extends Component {
     }
   }
 
-  componentWillReceiveProps = async () => {
+  fetchNews = async () => {
     const self = this;
-    const api_key = "8e9f1bf2b8c841278301c14cf986965e";
+    const api_key = "00996750f97644cca91df97021253add";
     const { handle } = self.props.match.params;
     const api_endpoint = `http://newsapi.org/v2/everything?q=${handle}&sortBy=publishedAt&language=en&apiKey=${api_key}`;
 
@@ -28,6 +28,14 @@ class AllNews extends Component {
     }).catch(function (err){
       console.log(err);
     })
+  }
+
+  componentDidMount = () => {
+    this.fetchNews();
+  }
+
+  componentWillReceiveProps = () => {
+    this.fetchNews();
   }
 
   renderNewsItems(){

@@ -10,7 +10,7 @@ const SingleNewsItem = ({item}) => {
         <div className="card-body">
           <h6 className="card-title">{item.title}</h6>
           <p className="card-text">{item.source.name}</p>
-          <a href={item.url} className="btn btn-primary" title={item.title} target="_blank" rel="noopener noreferrer">Full Article</a>
+          <a href={item.url} className="btn btn-danger" title={item.title} target="_blank" rel="noopener noreferrer">Read Full Article</a>
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@ class Header extends Component {
           <h2>
             <Link to="./">React News App</Link>
           </h2>
-          <p className="mb-0">Developed by Olaoye Anthony Somide</p>
+          <p className="mb-0">Grab your news on the GO!</p>
         </div>
 
         <div className="col-md-12 col-lg-6 text-left text-lg-right">

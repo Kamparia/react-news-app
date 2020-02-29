@@ -9,7 +9,7 @@ class Footer extends Component {
             <div className="col-sm-6">
               <p className="mb-1">&copy; Copyright Olaoye Anthony Somide. All Rights Reserved</p>
               <div className="credits">
-                Theme by <a href="https://bootstrapmade.com/" rel="noopener noreferrer" target="_blank">BootstrapMade</a>
+                Data Source: <a href="https://newsapi.org/" rel="noopener noreferrer" target="_blank">News API</a>
               </div>
             </div>
             <div className="col-sm-6 social text-md-right">
