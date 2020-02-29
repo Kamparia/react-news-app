@@ -15,7 +15,7 @@ class AllNews extends Component {
     const self = this;
     const api_key = "00996750f97644cca91df97021253add";
     const { handle } = self.props.match.params;
-    const api_endpoint = `http://newsapi.org/v2/everything?q=${handle}&sortBy=publishedAt&language=en&apiKey=${api_key}`;
+    const api_endpoint = `https://newsapi.org/v2/everything?q=${handle}&sortBy=publishedAt&language=en&apiKey=${api_key}`;
 
     await axios.get(api_endpoint).then(function (response){
       const data = response.data;
